@@ -2,11 +2,18 @@ import { Button } from "@mui/material";
 import "./register.scss";
 import InputAdornment from "@mui/material/InputAdornment";
 import TextField from "@mui/material/TextField";
-import emailImg from "../../Assets/Image/ci_mail.svg";
-import passwdImg from "../../Assets/Image/carbon_password.svg";
-import homeImg from "../../Assets/Image/bx_home.svg"
-import personImg from "../../Assets/Image/icon.svg"
+import emailImg from "../../../Assets/Image/ci_mail.svg";
+import passwdImg from "../../../Assets/Image/carbon_password.svg";
+import homeImg from "../../../Assets/Image/bx_home.svg";
+import personImg from "../../../Assets/Image/icon.svg";
+import { useNavigate } from "react-router";
 const Register = () => {
+  let navigate = useNavigate();
+  const toAuth = () => {
+    let path = `/auth`;
+    navigate(path);
+  };
+
   return (
     <div className="page--register--container">
       <div className="page--register">
@@ -79,9 +86,8 @@ const Register = () => {
           variant="standard"
         />
         <br />
-       
- 
-        <Button className="register" variant="contained">
+
+        <Button onClick={toAuth} className="register" variant="contained">
           Inregistreaza
         </Button>
       </div>

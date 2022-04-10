@@ -1,10 +1,9 @@
 import React from "react";
 import "./home.scss";
-import bg from "../../Assets/Image/page-background.svg";
-import logo from "../../Assets/Image/logo.png";
-import PrimarySearchAppBar from "../SearchBar/SearchBar";
-import AuthorisationBar from "../AuthorisationBar/AuthorisationBar";
-import Navbar from "../../StaticComponents/Navbar";
+import bg from "../../../Assets/Image/page-background.svg";
+import logo from "../../../Assets/Image/logo.png";
+import PrimarySearchAppBar from "../../SearchBar/SearchBar";
+import AuthorisationBar from "../../AuthorisationBar/AuthorisationBar";
 
 const Home = () => {
   return (
