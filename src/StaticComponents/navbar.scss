@@ -1,0 +1,52 @@
+.NavBar--container {
+    position: fixed;
+    width: 100%;
+    top: 50%;
+}
+.NavBar--container {
+    z-index: 1030;
+}
+
+
+.NavBar--container li {
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    width: 125px;
+    opacity: 0.75;
+    display: block;
+}
+
+.NavBar--container li:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+.NavBar--btns--left li {
+    text-align: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: 0;
+    padding-right: 0;
+}
+
+.NavBar--btns--right li {
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.NavBar--btns--right {
+   position: fixed;
+   right: 0;
+   top: 65%;
+}
+
+.NavBar--btns--left {
+    position: fixed;
+    left: 0;
+    top: 50%;
+}
