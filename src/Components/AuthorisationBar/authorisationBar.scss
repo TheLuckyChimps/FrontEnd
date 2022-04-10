@@ -1,0 +1,23 @@
+.authorisation--bar {
+  background-color: white;
+  display: inline-block;
+  border-radius: 10px;
+  float: right;
+}
+
+.auth {
+  color: black !important;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.reg {
+  color: black !important;
+
+  background: linear-gradient(
+    96.67deg,
+    rgba(32, 191, 85, 0.7) 23.84%,
+    rgba(1, 182, 239, 0.21) 89.45%
+  );
+  border-radius: 10px;
+}
