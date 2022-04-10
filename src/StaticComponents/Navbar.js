@@ -10,53 +10,53 @@ const Navbar = () => {
       <ul className="NavBar--btns">
         <div className="NavBar--btns--left">
           <li
-            className={URL === "trasee" && "active-link"}
-            onClick={() => history("/trasee")}
+            className={URL === "bus-route" && "active-link"}
+            onClick={() => history("/bus-route")}
           >
             Trasee
           </li>
           <li
-            className={URL === "plata" && "active-link"}
-            onClick={() => history("/plata")}
+            className={URL === "payment" && "active-link"}
+            onClick={() => history("/payment")}
           >
             Plata
           </li>
           <li
-            className={URL === "bilete" && "active-link"}
-            onClick={() => history("/bilete")}
+            className={URL === "tickets" && "active-link"}
+            onClick={() => history("/tickets")}
           >
             Bilete si abonamente
           </li>
           <li
-            className={URL === "Contact" && "active-link"}
+            className={URL === "contact" && "active-link"}
             onClick={() => history("/contact")}
           >
             Contact
           </li>
         </div>
-        
+
         <div className="NavBar--btns--right" style={{ textAlign: "right" }}>
           <li
-            className={URL === "recomandari" && "active-link"}
-            onClick={() => history("/recomandari")}
+            className={URL === "recommendations" && "active-link"}
+            onClick={() => history("/recommendations")}
           >
             Recomandari
           </li>
           <li
-            className={URL === "conducere" && "active-link"}
-            onClick={() => history("/conducere")}
+            className={URL === "lead" && "active-link"}
+            onClick={() => history("/lead")}
           >
             Conducere TPL
           </li>
           <li
-            className={URL === "galerie" && "active-link"}
-            onClick={() => history("/galerie")}
+            className={URL === "gallery" && "active-link"}
+            onClick={() => history("/gallery")}
           >
             Galerie
           </li>
           <li
-            className={URL === "sanctiuni" && "active-link"}
-            onClick={() => history("/sanctiuni")}
+            className={URL === "sanctions" && "active-link"}
+            onClick={() => history("/sanctions")}
           >
             Norme si sanctiuni
           </li>

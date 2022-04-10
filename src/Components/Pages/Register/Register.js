@@ -2,11 +2,18 @@ import { Button } from "@mui/material";
 import "./register.scss";
 import InputAdornment from "@mui/material/InputAdornment";
 import TextField from "@mui/material/TextField";
-import emailImg from "../../Assets/Image/ci_mail.svg";
-import passwdImg from "../../Assets/Image/carbon_password.svg";
-import homeImg from "../../Assets/Image/bx_home.svg"
-import personImg from "../../Assets/Image/icon.svg"
+import emailImg from "../../../Assets/Image/ci_mail.svg";
+import passwdImg from "../../../Assets/Image/carbon_password.svg";
+import homeImg from "../../../Assets/Image/bx_home.svg";
+import personImg from "../../../Assets/Image/icon.svg";
+import { useNavigate } from "react-router";
 const Register = () => {
+  let navigate = useNavigate();
+  const toAuth = () => {
+    let path = `/auth`;
+    navigate(path);
+  };
+
   return (
     <div className="page--register--container">
       <div className="page--register">
@@ -17,7 +24,7 @@ const Register = () => {
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">
-                <img src={personImg} />
+                <img src={personImg} alt="name" />
               </InputAdornment>
             ),
           }}
@@ -30,7 +37,7 @@ const Register = () => {
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">
-                <img src={personImg} />
+                <img src={personImg} alt="first-name" />
               </InputAdornment>
             ),
           }}
@@ -44,7 +51,7 @@ const Register = () => {
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">
-                <img src={homeImg} />
+                <img src={homeImg} alt="address" />
               </InputAdornment>
             ),
           }}
@@ -58,7 +65,7 @@ const Register = () => {
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">
-                <img src={emailImg} />
+                <img src={emailImg} alt="email" />
               </InputAdornment>
             ),
           }}
@@ -72,16 +79,15 @@ const Register = () => {
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">
-                <img src={passwdImg} />
+                <img src={passwdImg} alt="password" />
               </InputAdornment>
             ),
           }}
           variant="standard"
         />
         <br />
-       
- 
-        <Button className="register" variant="contained">
+
+        <Button onClick={toAuth} className="register" variant="contained">
           Inregistreaza
         </Button>
       </div>
