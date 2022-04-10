@@ -24,7 +24,7 @@ const Register = () => {
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">
-                <img src={personImg} />
+                <img src={personImg} alt="name" />
               </InputAdornment>
             ),
           }}
@@ -37,7 +37,7 @@ const Register = () => {
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">
-                <img src={personImg} />
+                <img src={personImg} alt="first-name" />
               </InputAdornment>
             ),
           }}
@@ -51,7 +51,7 @@ const Register = () => {
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">
-                <img src={homeImg} />
+                <img src={homeImg} alt="address" />
               </InputAdornment>
             ),
           }}
@@ -65,7 +65,7 @@ const Register = () => {
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">
-                <img src={emailImg} />
+                <img src={emailImg} alt="email" />
               </InputAdornment>
             ),
           }}
@@ -79,7 +79,7 @@ const Register = () => {
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">
-                <img src={passwdImg} />
+                <img src={passwdImg} alt="password" />
               </InputAdornment>
             ),
           }}

@@ -28,7 +28,7 @@ const Authentication = () => {
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">
-                <img src={emailImg} />
+                <img src={emailImg} alt="email" />
               </InputAdornment>
             ),
           }}
@@ -42,7 +42,7 @@ const Authentication = () => {
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">
-                <img src={passwdImg} />
+                <img src={passwdImg} alt="password" />
               </InputAdornment>
             ),
           }}
