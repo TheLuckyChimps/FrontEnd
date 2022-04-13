@@ -20,8 +20,8 @@ const Router = () => {
   return (
     <div className="page">
       <BrowserRouter>
-        {page !== "auth" && page !== "reg" && <Navbar />}
-        {page !== "auth" && page !== "reg" && <Home />}
+        {/* {page !== "auth" && page !== "reg" && }
+        {page !== "auth" && page !== "reg" &&} */}
 
         <Routes>
           <Route path="/bus-route" element={<BusRoute />} />
