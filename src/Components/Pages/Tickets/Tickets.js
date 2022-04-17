@@ -9,11 +9,14 @@ import {
 } from "@mui/material";
 import "./tickets.scss";
 import PlusMinusButton from "../../PlusMinusButton/PlusMinusButton";
+import { useNavigate } from "react-router";
 
 const Tickets = () => {
   let route = "No route";
+  let navigate = useNavigate();
   const toCheckOut = () => {
-    
+    let path = `/checkout`;
+    navigate(path);
   }
   return (
     <div className="page">
