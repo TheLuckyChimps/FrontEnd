@@ -6,8 +6,16 @@
     left: 25%;
     display: inline-block;
     background-color: white;
-    text-align: center;
-    opacity: 0.5;
     border-radius: 10px;
     justify-content: center;
+}
+
+.tickets * {
+    text-align: center;
+}
+
+.button--finish-payment {
+    background-color: green !important;
+    color: white !important;
+    border-color: white !important;
 }
