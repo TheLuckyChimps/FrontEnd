@@ -1,0 +1,23 @@
+.page--checkout--container {
+  display: flex;
+  justify-content: center;
+}
+
+.page--checkout {
+  background-color: white;
+  border-radius: 10px;
+  height: 750px;
+  width: 500px;
+  text-align: center;
+  line-height: 64px;
+}
+
+.dropdown--month {
+  width: 25%;
+  
+}
+
+.dropdown--year {
+  width: 25%;
+  display: inline-block;
+}

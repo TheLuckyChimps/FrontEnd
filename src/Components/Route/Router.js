@@ -1,5 +1,4 @@
 import React from "react";
-import Home from "../Pages/Home/Home";
 import BusRoute from "../Pages/BusRoute/BusRoute";
 import Payment from "../Pages/Payment/Payment";
 import Tickets from "../Pages/Tickets/Tickets";
@@ -9,9 +8,9 @@ import Lead from "../Pages/Lead/Lead";
 import Gallery from "../Pages/Gallery/Gallery";
 import Sanctions from "../Pages/Sanctions/Sanctions";
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
-import Navbar from "../../StaticComponents/Navbar";
 import Authentication from "../Pages/Authentication/Authentication";
 import Register from "../Pages/Register/Register";
+import Checkout from "../Pages/Checkout/Checkout";
 
 const Router = () => {
   const page = window.location.pathname.split("/")[1];
@@ -20,9 +19,6 @@ const Router = () => {
   return (
     <div className="page">
       <BrowserRouter>
-        {/* {page !== "auth" && page !== "reg" && }
-        {page !== "auth" && page !== "reg" &&} */}
-
         <Routes>
           <Route path="/bus-route" element={<BusRoute />} />
           <Route path="/payment" element={<Payment />} />
@@ -35,6 +31,7 @@ const Router = () => {
           <Route path="/sanctions" element={<Sanctions />} />
 
           <Route path="/auth" element={<Authentication />} />
+          <Route path="/checkout" element={<Checkout />} />
           <Route path="/reg" element={<Register />} />
           <Route path="*" element={<Navigate to="/auth" />} />
         </Routes>
