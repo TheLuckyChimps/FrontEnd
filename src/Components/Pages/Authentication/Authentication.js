@@ -5,13 +5,30 @@ import TextField from "@mui/material/TextField";
 import emailImg from "../../../Assets/Image/ci_mail.svg";
 import passwdImg from "../../../Assets/Image/carbon_password.svg";
 import { useNavigate } from "react-router";
+import { loginCall } from "../../../Services/ApiCalls";
 
 const Authentication = () => {
   let navigate = useNavigate();
+    let values = {
+      email: "",
+      password: "",
+    };
   const toBusRoutes = () => {
-    let path = `/bus-route`;
-    navigate(path);
+     
+
+  loginCall(values, successHandler);
+    
   };
+    function successHandler(response) {
+      console.log(response);
+      if (response.errors === undefined) {
+        let path = `/bus-route`;
+        navigate(path);
+      } else {
+        console.log("error");
+      }
+    }
+
   const toReg = () => {
     let path = `/reg`;
     navigate(path);
@@ -33,6 +50,7 @@ const Authentication = () => {
             ),
           }}
           variant="standard"
+          onChange={(event) => (values.email = event.target.value)}
         />
         <br />
         <TextField
@@ -47,6 +65,7 @@ const Authentication = () => {
             ),
           }}
           variant="standard"
+          onChange={(event) => (values.password = event.target.value)}
         />
         <p className="forgot--password">
           <span className="redirect">Ai uitat parola?</span>

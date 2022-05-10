@@ -7,12 +7,32 @@ import passwdImg from "../../../Assets/Image/carbon_password.svg";
 import homeImg from "../../../Assets/Image/bx_home.svg";
 import personImg from "../../../Assets/Image/icon.svg";
 import { useNavigate } from "react-router";
+import { registerCall } from "../../../Services/ApiCalls"
+
 const Register = () => {
   let navigate = useNavigate();
+  let values = {
+    name: "",
+    surname: "",
+    address: "",
+    email: "",
+    password: ""
+  }
   const toAuth = () => {
-    let path = `/auth`;
-    navigate(path);
+     registerCall(values, successHandler);
   };
+
+    function successHandler(response) {
+      console.log(response);
+      if (response.errors === undefined) {
+        let path = `/auth`;
+        navigate(path);
+      } else {
+        console.log("error");
+      }
+    }
+
+
 
   return (
     <div className="page--register--container">
@@ -29,6 +49,7 @@ const Register = () => {
             ),
           }}
           variant="standard"
+          onChange={(event) => (values.name = event.target.value)}
         />
         <br />
         <TextField
@@ -42,6 +63,7 @@ const Register = () => {
             ),
           }}
           variant="standard"
+          onChange={(event) => (values.surname = event.target.value)}
         />
         <br />
         <TextField
@@ -56,6 +78,7 @@ const Register = () => {
             ),
           }}
           variant="standard"
+          onChange={(event) => (values.address = event.target.value)}
         />
         <br />
         <TextField
@@ -70,6 +93,7 @@ const Register = () => {
             ),
           }}
           variant="standard"
+          onChange={(event) => (values.email = event.target.value)}
         />
         <br />
         <TextField
@@ -84,6 +108,7 @@ const Register = () => {
             ),
           }}
           variant="standard"
+          onChange={(event) => (values.password = event.target.value)}
         />
         <br />
 
