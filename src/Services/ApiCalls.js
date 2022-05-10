@@ -25,3 +25,14 @@ export function loginCall(data, reroute) {
     .then(reroute)
     .catch(reroute);
 }
+
+export function getAllAnnouncements(data, display) {
+  fetch(BE + "/api/Announcement/GetAll", {
+    method: "GET",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(data),
+  })
+    .then((res) => res.json())
+    .then(display)
+    .catch(display);
+}

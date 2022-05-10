@@ -11,6 +11,11 @@
   text-align: center;
   line-height: 64px;
 }
+
+.register--error {
+
+} 
+
 .redirect:hover {
   color: green;
   cursor: pointer;
@@ -22,4 +27,8 @@
 
 .redirect {
   color: black;
+}
+
+.error {
+  color: red;
 }
