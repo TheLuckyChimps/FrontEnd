@@ -8,24 +8,27 @@ import { useNavigate } from "react-router";
 import { loginCall } from "../../../Services/ApiCalls";
 
 const Authentication = () => {
+
   let navigate = useNavigate();
     let values = {
       email: "",
       password: "",
     };
+   
+  
   const toBusRoutes = () => {
-     
-
   loginCall(values, successHandler);
     
   };
     function successHandler(response) {
       console.log(response);
       if (response.errors === undefined) {
+        localStorage.setItem("idtoken", response.Token);
         let path = `/bus-route`;
         navigate(path);
       } else {
-        console.log("error");
+        errorMessage = 'Eroare';
+        console.log(errorMessage);
       }
     }
 
@@ -34,6 +37,8 @@ const Authentication = () => {
     navigate(path);
   };
 
+
+ var errorMessage = "";
   return (
     <div className="page--authentication--container">
       <div className="page--authentication">
@@ -79,6 +84,7 @@ const Authentication = () => {
             nu ai cont? inregistreaza-te aici...
           </span>
         </p>
+        <p className="register--error">{errorMessage}</p>
       </div>
     </div>
   );
