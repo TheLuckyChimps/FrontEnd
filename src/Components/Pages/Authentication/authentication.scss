@@ -3,6 +3,10 @@
   justify-content: center;
 }
 
+.passwordInput, .emailInput {
+  width: 50%;
+}
+
 .page--authentication {
   background-color: white;
   border-radius: 10px;
@@ -12,8 +16,9 @@
   line-height: 64px;
 }
 
-.register--error {
-
+.auth--error {
+  color: red;
+  font-weight: bold;
 } 
 
 .redirect:hover {

@@ -1,3 +1,4 @@
+import React from "react";
 import { Button } from "@mui/material";
 import "./register.scss";
 import InputAdornment from "@mui/material/InputAdornment";
@@ -7,7 +8,10 @@ import passwdImg from "../../../Assets/Image/carbon_password.svg";
 import homeImg from "../../../Assets/Image/bx_home.svg";
 import personImg from "../../../Assets/Image/icon.svg";
 import { useNavigate } from "react-router";
-import { registerCall } from "../../../Services/ApiCalls"
+import { registerCall } from "../../../Services/ApiCalls";
+import IconButton from "@mui/material/IconButton";
+import Visibility from "@material-ui/icons/Visibility";
+import VisibilityOff from "@material-ui/icons/VisibilityOff";
 
 const Register = () => {
   let navigate = useNavigate();
@@ -16,23 +20,29 @@ const Register = () => {
     surname: "",
     address: "",
     email: "",
-    password: ""
-  }
+    password: "",
+  };
+  const [errorMessage, setErrorMessage] = React.useState("");
+  const [showPassword, setShowPassword] = React.useState(false);
+  const handleClickShowPassword = () => setShowPassword(!showPassword);
+  const handleMouseDownPassword = () => setShowPassword(!showPassword);
+
   const toAuth = () => {
-     registerCall(values, successHandler);
+    registerCall(values, successHandler);
   };
 
-    function successHandler(response) {
-      console.log(response);
-      if (response.errors === undefined) {
-        let path = `/auth`;
-        navigate(path);
-      } else {
-        console.log("error");
-      }
+  function successHandler(response) {
+    console.log(response);
+    if (response.errors === undefined) {
+      let path = `/auth`;
+      navigate(path);
+    } else {
+      setErrorMessage(
+        "Eroare la inregistrare, verifica datele personale sa fie corecte"
+      );
+      console.log(errorMessage);
     }
-
-
+  }
 
   return (
     <div className="page--register--container">
@@ -48,6 +58,7 @@ const Register = () => {
               </InputAdornment>
             ),
           }}
+          className="nameInput"
           variant="standard"
           onChange={(event) => (values.name = event.target.value)}
         />
@@ -62,6 +73,7 @@ const Register = () => {
               </InputAdornment>
             ),
           }}
+          className="surnameInput"
           variant="standard"
           onChange={(event) => (values.surname = event.target.value)}
         />
@@ -99,11 +111,23 @@ const Register = () => {
         <TextField
           id="input-with-icon-textfield"
           label="Parola"
-          className="emailInput"
+          className="passwordInput"
+          type={showPassword ? "text" : "password"}
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">
                 <img src={passwdImg} alt="password" />
+              </InputAdornment>
+            ),
+            endAdornment: (
+              <InputAdornment position="end">
+                <IconButton
+                  aria-label="toggle password visibility"
+                  onClick={handleClickShowPassword}
+                  onMouseDown={handleMouseDownPassword}
+                >
+                  {showPassword ? <Visibility /> : <VisibilityOff />}
+                </IconButton>
               </InputAdornment>
             ),
           }}
@@ -115,6 +139,7 @@ const Register = () => {
         <Button onClick={toAuth} className="register" variant="contained">
           Inregistreaza
         </Button>
+        {errorMessage && <p className="auth--error">{errorMessage}</p>}
       </div>
     </div>
   );
