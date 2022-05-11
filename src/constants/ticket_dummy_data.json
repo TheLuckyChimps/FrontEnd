@@ -1,0 +1,12 @@
+{
+  "tickets": [
+    {
+      "id": "1",
+      "title": "Bilet 1"
+    },
+    {
+      "id": "2",
+      "title": "Abonament 2"
+    }
+  ]
+}

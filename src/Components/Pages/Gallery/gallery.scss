@@ -1,13 +1,25 @@
 .gallery {
-    position: fixed;
-    width: 50%;
-    height: 50%;
-    top: 25%;
-    left: 25%;
-    display: inline-block;
-    background-color: white;
-    text-align: center;
-    opacity: 0.5;
-    border-radius: 10px;
-    justify-content: center;
+  padding: 2rem 0;
+  position: fixed;
+  width: 50%;
+  height: 50%;
+  top: 25%;
+  left: 25%;
+  display: inline-block;
+  background-color: white;
+  text-align: center;
+
+  border-radius: 10px;
+  justify-content: center;
+  img {
+    margin-bottom: 1rem;
+  }
+  overflow-y: scroll;
+}
+
+.carousel-slider {
+  border-radius: 10px;
+  img {
+    height: 525px;
+  }
 }

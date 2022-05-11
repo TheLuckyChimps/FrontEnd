@@ -1,4 +1,5 @@
-.bus-route {
+.autopark {
+  padding: 2rem 0;
   position: fixed;
   width: 50%;
   height: 50%;
@@ -7,12 +8,18 @@
   display: inline-block;
   background-color: white;
   text-align: center;
+
   border-radius: 10px;
   justify-content: center;
+  img {
+    margin-bottom: 1rem;
+  }
   overflow-y: scroll;
-  padding: 1rem;
 }
 
-.bus--route--container {
-  margin-bottom: 2rem;
+.carousel-slider {
+  border-radius: 10px;
+  img {
+    height: 525px;
+  }
 }

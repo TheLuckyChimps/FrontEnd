@@ -1,21 +1,19 @@
 .tickets {
-    position: fixed;
-    width: 50%;
-    height: 50%;
-    top: 25%;
-    left: 25%;
-    display: inline-block;
-    background-color: white;
-    border-radius: 10px;
-    justify-content: center;
+  position: fixed;
+  width: 50%;
+  height: 50%;
+  top: 25%;
+  left: 25%;
+  display: inline-block;
+  background-color: white;
+  border-radius: 10px;
+  justify-content: center;
 }
 
 .tickets * {
-    text-align: center;
+  text-align: center;
 }
 
-.button--finish-payment {
-    background-color: green !important;
-    color: white !important;
-    border-color: white !important;
+.ticket-container {
+  margin-bottom: 2rem;
 }

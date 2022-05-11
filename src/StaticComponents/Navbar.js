@@ -16,10 +16,16 @@ const Navbar = () => {
             Trasee
           </li>
           <li
-            className={URL === "payment" && "active-link"}
-            onClick={() => history("/payment")}
+            className={URL === "announces" && "active-link"}
+            onClick={() => history("/announces")}
           >
-            Plata
+            Anunturi
+          </li>
+          <li
+            className={URL === "infoclient" && "active-link"}
+            onClick={() => history("/infoclient")}
+          >
+            Informatii calatori
           </li>
           <li
             className={URL === "tickets" && "active-link"}
@@ -37,10 +43,10 @@ const Navbar = () => {
 
         <div className="NavBar--btns--right" style={{ textAlign: "right" }}>
           <li
-            className={URL === "recommendations" && "active-link"}
-            onClick={() => history("/recommendations")}
+            className={URL === "aboutus" && "active-link"}
+            onClick={() => history("/aboutus")}
           >
-            Recomandari
+            Despre noi
           </li>
           <li
             className={URL === "lead" && "active-link"}
@@ -53,6 +59,12 @@ const Navbar = () => {
             onClick={() => history("/gallery")}
           >
             Galerie
+          </li>
+          <li
+            className={URL === "autopark" && "active-link"}
+            onClick={() => history("/autopark")}
+          >
+            Prezentare parc auto
           </li>
           <li
             className={URL === "sanctions" && "active-link"}
