@@ -8,7 +8,6 @@ import AuthorisationBar from "../../AuthorisationBar/AuthorisationBar";
 const Home = () => {
   return (
     <div className="wrapper--home">
-      <img src={bg} alt="background" className="image--bg" />
       <div className="content">
         <header>
           <img src={logo} alt="logo" className="image--logo" />

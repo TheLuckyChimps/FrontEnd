@@ -9,11 +9,13 @@
 
 .NavBar--container li {
   margin: 10px;
-  padding: 10px;
+  padding: 15px;
   background-color: white;
-  width: 125px;
+  width: 150px;
   opacity: 0.75;
   display: block;
+  font-size: 17px;
+  font-weight: 600;
 }
 
 .NavBar--container li:hover {
@@ -26,7 +28,6 @@
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   margin-left: 0;
-  padding-right: 0;
 }
 
 .NavBar--btns--right li {
@@ -34,17 +35,16 @@
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   margin-right: 0;
-  padding-right: 0;
 }
 
 .NavBar--btns--right {
   position: fixed;
   right: 0;
-  top: 65%;
+  top: 40%;
 }
 
 .NavBar--btns--left {
   position: fixed;
   left: 0;
-  top: 50%;
+  top: 40%;
 }

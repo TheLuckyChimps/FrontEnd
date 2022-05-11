@@ -15,7 +15,7 @@ const AuthorisationBar = () => {
 
   return (
     <div className="authorisation--bar">
-      <Button onClick={toAuth} className="auth" variant="outlined">
+      <Button onClick={toAuth} className="auth" variant="contained">
         Autentificare
       </Button>
       <Button onClick={toReg} className="reg" variant="contained">

@@ -19,9 +19,9 @@ const BusRoute = () => {
       <div className="bus-route">
         {TRAILS.trails.map((elem, index) => (
           <div key={index} className="bus--route--container">
-            <div>{elem.title}</div>
-            <div>{elem.operatingHours}</div>
-            <div>{elem.stations}</div>
+            <h1>{elem.title}</h1>
+            <span>{elem.operatingHours}</span>
+            <p>{elem.stations}</p>
           </div>
         ))}
       </div>

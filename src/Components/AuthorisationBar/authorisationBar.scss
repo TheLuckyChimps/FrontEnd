@@ -1,23 +1,28 @@
 .authorisation--bar {
-  background-color: white;
-  display: inline-block;
+  //background-color: white;
+  display: flex;
+  flex-direction: row;
+  grid-gap: 10px;
   border-radius: 10px;
   float: right;
+  margin-right: 40px;
 }
 
 .auth {
   color: black !important;
-  background-color: white;
-  border-radius: 10px;
+  background-color: white !important;
 }
 
 .reg {
   color: black !important;
+  background: white !important;
+}
 
+.reg:hover, .auth:hover{
   background: linear-gradient(
     96.67deg,
-    rgba(32, 191, 85, 0.7) 23.84%,
-    rgba(1, 182, 239, 0.21) 89.45%
-  );
-  border-radius: 10px;
+    rgba(32, 191, 85, 0.9) 23.84%,
+    rgba(1, 182, 239, 0.9) 89.45%
+  ) !important; 
 }
+

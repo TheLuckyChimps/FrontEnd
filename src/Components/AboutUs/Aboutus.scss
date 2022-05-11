@@ -4,29 +4,27 @@
 
 .reccommendations {
   position: fixed;
-  width: 50%;
-  height: 50%;
-  top: 25%;
-  left: 25%;
+  width: 65%;
+  height: 64%;
+  top: 22%;
+  left: 17%;
   display: inline-block;
-  background-color: white;
-  text-align: center;
+  //text-align: center;
   border-radius: 10px;
   justify-content: center;
   overflow-y: scroll;
+  padding: 1rem;
+  background-image: linear-gradient(
+    138.67deg,
+    rgba(255, 255, 255, 0.8) 28.47%,
+    rgba(255, 255, 255, 0.8) 69%
+  ),url("../../Assets/Image/page-background.svg");
+  background-size: cover;
 }
 
-.aboutus--container {
-  background-color: white;
-  border-radius: 15px;
-  width: 795px;
-  height: 665px;
-  margin: 0 auto;
-  padding-top: 28px;
-  box-shadow: 4px 3px 8px 1px #969696;
-  -webkit-box-shadow: 4px 3px 8px 1px #969696;
-  margin-top: 50px;
-  margin-bottom: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
+.aboutus--info{
+  margin: 20px 150px 0;
+  font-size: 14px;
+  line-height: 25px;
+  margin-bottom: 50px;
 }

@@ -8,12 +8,12 @@ const Lead = () => {
       <Navbar />
       <Home />
       <div className="lead">
-        <div className ="title">Adunarea GeneralÄƒ a AcÈ›ionarilor</div>
+        <div className ="title">Adunarea Generala a Actionarilor</div>
         <br></br>
-        <div className = "name">ArÄƒmescu Adrian</div>
-        <div className = "name">HriÈ›cu Ovidiu</div>
+        <div className = "name">Aramescu Adrian</div>
+        <div className = "name">Hrincu Ovidiu</div>
         <br></br>
-        <div className ="title">Consiliul de administraÈ›ie</div>
+        <div className ="title">Consiliul de administratie</div>
         <br ></br>
         <table>
           <tr>
@@ -41,7 +41,7 @@ const Lead = () => {
     <td>CV Romaniuc Darie</td>
   </tr>
   <tr>
-    <td>SÃ¢rghie Teodor-Sebastian</td>
+    <td>Sarghie Teodor-Sebastian</td>
     <td></td>
   </tr>
   <tr>
@@ -52,7 +52,7 @@ const Lead = () => {
 <br></br>
     <div className="title">Director General</div>
     <br></br>
-    <div className="name">Ing. DÄƒnuÈ› Matei</div>
+    <div className="name">Ing. Danut Matei</div>
     <br></br>
       </div>
     </div>

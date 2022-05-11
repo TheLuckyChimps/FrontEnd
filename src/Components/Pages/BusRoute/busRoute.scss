@@ -1,18 +1,37 @@
 .bus-route {
   position: fixed;
-  width: 50%;
-  height: 50%;
-  top: 25%;
-  left: 25%;
+  width: 65%;
+  height: 64%;
+  top: 22%;
+  left: 17%;
   display: inline-block;
-  background-color: white;
   text-align: center;
   border-radius: 10px;
   justify-content: center;
   overflow-y: scroll;
   padding: 1rem;
+  background-image: linear-gradient(
+    138.67deg,
+    rgba(255, 255, 255, 0.8) 28.47%,
+    rgba(255, 255, 255, 0.8) 69%
+  ),url("../../../Assets/Image/page-background.svg");
+  background-size: cover;
 }
 
-.bus--route--container {
-  margin-bottom: 2rem;
+.bus--route--container{
+  margin-bottom: 10px;
+}
+
+.bus--route--container h1 {
+  margin-bottom: 5px;
+}
+
+.bus--route--container p {
+  margin: 20px 150px 0;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.bus--route--container span {
+  font-weight: 600;
 }

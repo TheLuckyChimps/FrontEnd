@@ -11,9 +11,9 @@ const Gallery = () => {
       <Navbar />
       <Home />
       <div className="gallery">
-        <img style={{ width: "500px" }} src={Image1} alt="tpl" />
-        <img style={{ width: "500px" }} src={Image2} alt="tpl" />
-        <img style={{ width: "500px" }} src={Image4} alt="tpl" />
+        <img style={{ width: "500px", marginBottom:"20px", marginTop: "15px"}} src={Image1} alt="tpl" />
+        <img style={{ width: "500px", marginBottom:"20px" }} src={Image2} alt="tpl" />
+        <img style={{ width: "500px", marginBottom:"20px" }} src={Image4} alt="tpl" />
       </div>
     </div>
   );

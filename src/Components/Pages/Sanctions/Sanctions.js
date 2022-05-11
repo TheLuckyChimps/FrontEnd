@@ -19,7 +19,6 @@ const Sanctions = () => {
       <Home />
       <div className="sanctions">
         <div className ="title">Sanctiuni</div>
-          <br></br>
         <div className="sanctions-body" ><br></br><br></br>Pentru a evita situaţiile neplăcute vă rugăm ca la urcarea în mijlocul de transport să solicitaţi biletul de călătorie de la taxator sau să verificaţi că dețineți abonament valabil!<br></br>
           <br></br>Călătorii care nu prezintă la control biletul sau abonamentul valabil vor fi sancţionaţi pe loc cu bilet de suprataxă în valoare de 30 lei sau prin proces verbal cu amendă în valoare de 100-500 lei.<br></br>
           <br></br>EXTRAS din HCL Suceava nr. 98/2011 cuprinzând NORME PRIVIND BUNA CONVIEŢUIRE, ORDINEA Şl LINIŞTEA PUBLICĂ, TRANSPORTUL PUBLIC DE CĂLĂTORI, GOSPODĂRIREA ORAŞULUI ŞI PROTECŢIA  MEDIULUI  ÎN  MUNICIPIUL  SUCEAVA:<br></br>

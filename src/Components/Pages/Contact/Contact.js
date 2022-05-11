@@ -46,6 +46,7 @@ const Contact = () => {
             variant="standard"
           />
           <br />
+          <br />
           <TextField
             id="input-with-icon-textfield"
             label="Adresa de email"
@@ -53,6 +54,7 @@ const Contact = () => {
             className="emailInput"
             variant="standard"
           />
+          <br />
           <br />
           <TextField
             id="input-with-icon-textfield"
@@ -63,15 +65,15 @@ const Contact = () => {
           />
           <br />
           <br />
-          <br />
           <p>Mesajul dumneavoastra</p>
           <TextareaAutosize
             onChange={(event) => (values.messageField = event.target.value)}
             id="input-with-icon-textfield"
             label="Mesajul dumneavoastra"
             className="messageInput"
-            variant="standard"
+            style={{opacity: 0.3}}
           />
+          <br />
           <br />
           <Button onClick={clearFields} className="trimite" variant="contained">
             Trimite

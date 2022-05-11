@@ -1,14 +1,21 @@
 .contact {
     position: fixed;
-    width: 50%;
-    height: 50%;
-    top: 25%;
-    left: 25%;
+    width: 65%;
+    height: 64%;
+    top: 22%;
+    left: 17%;
     display: inline-block;
-    background-color: white;
+    //text-align: center;
     border-radius: 10px;
-    padding: 10px;
-    opacity: 1;
+    justify-content: center;
+    overflow-y: scroll;
+    padding: 1rem;
+    background-image: linear-gradient(
+      138.67deg,
+      rgba(255, 255, 255, 0.8) 28.47%,
+      rgba(255, 255, 255, 0.8) 69%
+    ),url("../../../Assets/Image/page-background.svg");
+    background-size: cover;
 }
 
 .contact p {
@@ -16,13 +23,10 @@
     margin: 0;
 }
 
-.contact h1 {
-    text-align: center;
-}
-
 .info {
-    width: 45%;
+    width: 50%;
     display: inline-block;
+    text-align: center;
 }
 
 .contact--form {
@@ -31,6 +35,6 @@
 }
 
 .messageInput {
-    width: 75%;
-    height: 200px;
+    width: 50%;
+    height: 150px;
 }

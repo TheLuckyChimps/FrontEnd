@@ -2,11 +2,23 @@
   "tickets": [
     {
       "id": "1",
-      "title": "Bilet 1"
+      "title": "Preţul biletelor şi abonamentelor de călătorie pentru mijloacele de transport ale  SC TPL SA  este stabilit prin  Hotărârea Consiliului Local Suceava",
+      "description_full": "Preţul unui bilet pentru o persoană pentru o singură călătorie este 2,50 lei. Biletul se procură la urcarea în mijlocul de transport de la taxator şi este valabil doar în mijlocul de transport respectiv. Călătorii au obligaţia de a solicita şi păstra biletul de călătorie asupra lor pe toată durata călătoriei şi de a-l prezenta organelor de control"
     },
     {
       "id": "2",
-      "title": "Abonament 2"
+      "title": "Abonament lunar -  75 lei",
+      "description_full": ""
+    },
+    {
+      "id": "3",
+      "title": "Abonament 15 zile -  46 lei",
+      "description_full": ""
+    },
+    {
+      "id": "4",
+      "title": "Abonament subvenţionat pentru studenţi**  -  37,50 lei",
+      "description_full": "**abonamentul subvenționat pentru elevi se eliberează elevilor care urmează cursurile unei unităţi de învăţământ de stat din municipiul Suceava"
     }
   ]
 }

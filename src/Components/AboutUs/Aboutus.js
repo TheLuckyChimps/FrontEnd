@@ -9,10 +9,10 @@ const Aboutus = () => {
       <Navbar />
       <Home />
       <div className="reccommendations">
-        <h1 className="aboutus--title">Scurt istoric</h1>
-        <div style={{ textIndent: "50px" }}>
+        <h1 className="aboutus--title">Despre noi</h1>
+        <div className="aboutus--info" style={{ textIndent: "50px" }}>
           <p>
-            <b>SC Transport Public Local SA</b>
+            <b>SC Transport Public Local SA </b>
             și-a început activitatea propriu-zisă de la data de 1 octombrie
             2005, având ca acţionar Consiliul Local Suceava, cu scopul de a
             continua serviciul de transport public de persoane pe raza
@@ -22,7 +22,7 @@ const Aboutus = () => {
             (autobuze, troleibuze, microbuze) folosit de aceasta.
           </p>
         </div>
-        <div style={{ textIndent: "50px" }}>
+        <div className="aboutus--info" style={{ textIndent: "50px" }}>
           <p>
             Pentru prima oară în oraşul Suceava, o activitate organizată de
             transport public de persoane a luat fiinţă în anul 1962 în cadrul
@@ -32,7 +32,7 @@ const Aboutus = () => {
             localităţile limitrofe.
           </p>
         </div>
-        <div style={{ textIndent: "50px" }}>
+        <div className="aboutus--info"  style={{ textIndent: "50px" }}>
           <p>
             Ulterior, în urma înfiinţării în ţară a unităţilor specializate de
             transport local, în anul 1980 şi-a început activitatea în municipiul
@@ -43,7 +43,7 @@ const Aboutus = () => {
             2006.
           </p>
         </div>
-        <div style={{ textIndent: "50px" }}>
+        <div className="aboutus--info" style={{ textIndent: "50px" }}>
           <p>
             După anul 1989, IJTL Suceava a fost reorganizată de câteva ori sub
             diferite forme şi denumiri şi anume: în perioada 1991-1995 Regia
@@ -53,7 +53,7 @@ const Aboutus = () => {
             (TPS).
           </p>
         </div>
-        <div style={{ textIndent: "50px" }}>
+        <div className="aboutus--info" style={{ textIndent: "50px" }}>
           <p>
             La sfârşitul anilor 90, în urma apariţiei şi dezvoltării
             necontrolate şi ilegale în acel moment a activităţii de transport
@@ -62,7 +62,7 @@ const Aboutus = () => {
             iar în toamna anului 2005 a ajuns la faliment.
           </p>
         </div>
-        <div style={{ textIndent: "50px" }}>
+        <div className="aboutus--info" style={{ textIndent: "50px" }}>
           <p>
             În această situaţie, pentru a veni în sprijinul populaţiei şi
             totodată ca măsură de protecţie socială pentru majoritatea
@@ -72,9 +72,9 @@ const Aboutus = () => {
         </div>
         <div style={{ textIndent: "50px" }}>
           <b>SC Transport Public Local SA Suceava </b>
-          este subordonată
+          este subordonată 
           <a href="https://www.primariasv.ro/" target="_blank" rel="noreferrer">
-            Primariei Municipiului Suceava
+             Primariei Municipiului Suceava
           </a>
           şi prestează către populaţie serviciul de transport public de persoane
           în municipiu.

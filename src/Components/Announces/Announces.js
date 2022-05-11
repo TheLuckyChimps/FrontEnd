@@ -13,18 +13,10 @@ const Announces = () => {
       <div className="announces--container">
         {ANNOUNCES.announces.map((elem) => (
           <div className="announces--announce" key={elem.id}>
-            <div style={{ fontSize: "24px", fontWeight: "bold" }}>
-              {elem.title}
-            </div>
-            <div
-              style={{
-                marginTop: "1rem",
-                textAlign: "justify",
-                textIndent: "2rem",
-              }}
-            >
-              {elem.description_full}
-            </div>
+            <h1>{elem.title}
+            </h1>
+            <p>{elem.description_full}
+            </p>
           </div>
         ))}
       </div>
